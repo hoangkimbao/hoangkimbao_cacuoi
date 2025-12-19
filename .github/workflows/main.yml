@@ -1,0 +1,10 @@
+name: CI_CD_Exercise
+on: [push] 
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Kiem tra file index
+        run: ls -l index.* 
